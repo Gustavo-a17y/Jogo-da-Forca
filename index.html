@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Jogo da Forca</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgcng9IjE0IiBmaWxsPSIjMUIxMTQ2Ii8+CjxsaW5lIHgxPSIxMCIgeTE9IjU0IiB4Mj0iMzQiIHkyPSI1NCIgc3Ryb2tlPSIjQTc4QkZBIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8bGluZSB4MT0iMTgiIHkxPSI1NCIgeDI9IjE4IiB5Mj0iMTAiIHN0cm9rZT0iI0E3OEJGQSIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPGxpbmUgeDE9IjE4IiB5MT0iMTAiIHgyPSI0NiIgeTI9IjEwIiBzdHJva2U9IiNBNzhCRkEiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CjxsaW5lIHgxPSIxOCIgeTE9IjE4IiB4Mj0iMjgiIHkyPSIxMCIgc3Ryb2tlPSIjQTc4QkZBIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8bGluZSB4MT0iNDYiIHkxPSIxMCIgeDI9IjQ2IiB5Mj0iMTgiIHN0cm9rZT0iI0E3OEJGQSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPGNpcmNsZSBjeD0iNDYiIGN5PSIyNiIgcj0iNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZEMjNGIiBzdHJva2Utd2lkdGg9IjMuNSIvPgo8bGluZSB4MT0iNDYiIHkxPSIzMiIgeDI9IjQ2IiB5Mj0iNDYiIHN0cm9rZT0iI0ZGNEQ4RCIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8bGluZSB4MT0iNDYiIHkxPSIzNiIgeDI9IjM5IiB5Mj0iNDIiIHN0cm9rZT0iI0ZGNEQ4RCIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8bGluZSB4MT0iNDYiIHkxPSIzNiIgeDI9IjUzIiB5Mj0iNDIiIHN0cm9rZT0iI0ZGNEQ4RCIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8bGluZSB4MT0iNDYiIHkxPSI0NiIgeDI9IjQwIiB5Mj0iNTQiIHN0cm9rZT0iIzA2RDZBMCIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8bGluZSB4MT0iNDYiIHkxPSI0NiIgeDI9IjUyIiB5Mj0iNTQiIHN0cm9rZT0iIzA2RDZBMCIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4=">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@600;700;800;900&display=swap&quot; rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="stage">
+  <header>
+    <h1>Jogo da Forca - Capitais do mundo</h1>
+  </header>
+
+  <div class="status">
+    <span>Palavra <b id="wordNum">1</b>/<b id="wordTotal">100</b></span>
+    <span>Acertos: <b id="scoreCount">0</b></span>
+  </div>
+
+  <div class="rig" id="rig"></div>
+
+  <div class="word" id="word"></div>
+  <div class="hint" id="hint"></div>
+
+  <div class="keyboard" id="keyboard"></div>
+</div>
+
+<div class="overlay" id="overlay">
+  <div class="modal" id="modal">
+    <h2 id="modalTitle"></h2>
+    <p id="modalText"></p>
+    <button class="next-btn" id="nextBtn">Próxima palavra</button>
+  </div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
